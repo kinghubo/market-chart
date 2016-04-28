@@ -1,0 +1,56 @@
+@import "../../styles/var";
+@import "../../styles/mixin";
+
+#nav {
+  ul {
+    display: flex;
+    width: 100%;
+    height: @nav-height;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid @border-color-gray;
+    list-style: none;
+
+    li {
+      flex: 1;
+      align-items: center;
+      height: 100%;
+
+      color: @text-gray;
+      font-size: @text-size-big;
+      text-align: center;
+      line-height: @nav-height;
+
+      &.active {
+        color: @theme-color;
+        border-bottom: 2px solid @theme-color;
+      }
+    }
+  }
+}
+
+/*加载图标*/
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+  font-size: 2.8rem;
+}
+
+/*错误信息*/
+.error-msg {
+  display: block;
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  padding: 0 0.8rem;
+  transform: translate(0%, -50%);
+
+  color: #666;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.8rem;
+}

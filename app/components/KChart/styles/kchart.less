@@ -1,0 +1,81 @@
+@import "../../../styles/var";
+@import "../../../styles/mixin";
+
+.kchart {
+  width: 100%;
+
+  /*指标*/
+  .indicator-vals {
+    width: 100%;
+    padding: 0 1rem;
+
+    -webkit-transform-origin-x: 0;
+    transform: scale(0.80);
+
+    color: @text-gray;
+    font-size: 0.6rem;
+    line-height: 2rem;
+    word-break: break-all;
+
+    span {
+      height: 100%;
+      margin-right: 0.8rem;
+    }
+
+    span:first-child {
+      color: @indicator-color-1;
+    }
+
+    span:nth-child(2) {
+      color: @indicator-color-2;
+    }
+
+    span:last-child {
+      color: @indicator-color-3;
+    }
+  }
+
+
+
+  /*K线图*/
+  .k-chart {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1rem;
+    padding: 0 0.2rem;
+  }
+
+
+  /*指标列表*/
+  .indicators {
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    margin: 0.4rem 0 0 0;
+    padding: 0 0.8rem;
+    list-style: none;
+    line-height: 2rem;
+
+    li {
+      flex: 1;
+      margin: 0 0.2rem;
+      text-align: center;
+
+      &.active {
+        color: #fff;
+        background: @theme-color;
+      }
+    }
+  }
+
+  /*指标图*/
+  .indicator-chart {
+    display: block;
+    width: 100%;
+    height: 10rem;
+  }
+}
+
+
+
