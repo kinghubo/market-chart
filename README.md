@@ -2,6 +2,7 @@
 
 ## 安装
 ```$ git clone <repository-url>```
+
 ```$ npm install```
 
 ## 运行
