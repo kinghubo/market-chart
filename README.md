@@ -12,4 +12,5 @@
 
 ## 样例展示
 ![demo1](https://raw.githubusercontent.com/tsyeyuanfeng/market-chart/master/demo/demo1.png)
+
 ![demo2](https://raw.githubusercontent.com/tsyeyuanfeng/market-chart/master/demo/demo2.png)
